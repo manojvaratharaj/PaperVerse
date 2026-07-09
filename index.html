@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>PaperVerse</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="menu-btn" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="web-name-place">
+            <h2 class="web-name"><span>Paper</span>Verse</h2>
+        </div>
+
+        <ul class="navbar-outer-ul" id="mobile-menu">
+
+            <li class="navbar-outer-li">
+                <a href="#">
+                    Stationery
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <ul class="navbar-inner-ul">
+                    <li><a href="#" data-category="NoteBooks & Diary">Notebooks & Diary</a></li>
+                    <li><a href="#" data-category="Pens">Pens & Markers</a></li>
+                    <li><a href="#" data-category="SticyNotes">Sticky Notes</a></li>
+                    <li><a href="#" data-category="Erasers & Correction Tapes">Erasers & Correction Tapes</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-outer-li">
+                <a href="#">
+                    Art Supplies
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <ul class="navbar-inner-ul">
+                    <li><a href="#" data-category="Peints">Paints</a></li>
+                    <li><a href="#" data-category="Pencils">Pencils</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-outer-li">
+                <a href="#">
+                    Craft Material
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <ul class="navbar-inner-ul">
+                    <li><a href="#" data-category="Acrylic & Wood">Acrylic & Wood</a></li>
+                    <li><a href="#" data-category="Papers">Papers</a></li>
+                </ul>
+            </li>
+
+
+            <li class="navbar-outer-li">
+                <a href="#">
+                    Art Forms
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <ul class="navbar-inner-ul">
+                    <li><a href="#" data-category="Resin Art">Resin Art</a></li>
+                    <li><a href="#" data-category="Jewelry Making">Jewelry Making</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <div class="navbar-buttons">
+            <button id="theme-toggle" class="icon-btn">
+                <img id="theme-icon" src="https://img.icons8.com/ios-glyphs/24/moon.png" alt="Dark Mode">
+            </button>
+            <button id="addto-wishlist-btn"><i class="fa-regular fa-heart"></i><span
+                    id="whishlist-count">0</span></button>
+            <button id="addto-cart-btn"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></button>
+        </div>
+
+    </nav>
+
+    <div class="search-container">
+        <div class="search-back-box">
+            <input type="text" placeholder="Search" class="inputBox" id="searchInput"><i
+                class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <div class="hero-image-box">
+        <img src="Hero-image.jpg" alt="" class="hero-img">
+    </div>
+
+    <div id="search-results">
+
+        <h2 id="search-title" style="display: none;">
+            Search Results<i class="fa-solid fa-magnifying-glass"></i>
+        </h2>
+
+        <div class="products-container" id="search-products-render">
+            <!-- Search products render here -->
+        </div>
+
+    </div>
+    <div id="products-sections">
+        <div class="products-box-mini-container">
+            <p class="big-text-ptag">STOCK CLEARANCE SALE</p>
+            <p class="small-text-ptag">Biggest Price Drops!!</p>
+        </div>
+
+        <div class="products-container" id="first-products-render">
+            <!--Products Render Place-->
+
+        </div>
+        <div id="view-all-box">
+            <button id="view-all-btn1" class="view-btn">View All</button>
+        </div>
+
+
+        <hr>
+        <div class="products-box-mini-container">
+            <p class="big-text-ptag">Gifting kits</p>
+            <p class="small-text-ptag">🕒 Just Dropped: 30–50% OFF!</p>
+        </div>
+
+        <div class="products-container" id="second-products-render">
+            <!--Products Render Place-->
+
+        </div>
+        <div id="view-all-box">
+            <button id="view-all-btn2" class="view-btn">View All</button>
+        </div>
+
+    </div>
+    <hr>
+    <div class="products-box-mini-container">
+        <p class="big-text-ptag">New Arrivals on Discount!</p>
+        <p class="small-text-ptag">💥 Clearance Alert: 30–50% OFF</p>
+    </div>
+
+    <div class="products-container" id="thrid-products-render">
+        <!--Products Render Place-->
+
+    </div>
+    <div id="view-all-box">
+        <button id="view-all-btn3" class="view-btn">View All</button>
+    </div>
+
+
+    </div>
+    <hr>
+
+    <div class="details">
+        <div class="details-box1">
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div>
+                <p>Standard Shipping Worldwide</p>
+                <p>Tell about your service</p>
+            </div>
+        </div>
+        <div class="details-box2">
+            <div>
+                <i class="fa-solid fa-school-lock"></i>
+            </div>
+            <div>
+                <p>100% Safe & Secure Checkout</p>
+                <p>Tell about your service.</p>
+            </div>
+        </div>
+        <div class="details-box3">
+            <div>
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+                <p>24/7 online support</p>
+                <p>Tell about your service.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-overlay">
+        <div class="popup-box cart-box">
+            <div class="cartmodel-header">
+                <h2>Your Shhopping Cart</h2>
+                <span class="close" id="popup-close-btn">X</span>
+            </div>
+            <div class="cartmodel-body" id="cart-items-list">
+                <!-- Cart items will be here -->
+            </div>
+            <div class="cartmodel-footer">
+                <div class="cart-total-info">
+                    <p>Subtotal: <span id="cart-subtotal">₹0</span></p>
+                    <p>Delivery Fee: <span id="delivery-fee">₹40</span></p>
+                    <hr>
+                    <h3>Total: <span id="cart-total">₹0</span></h3>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary btn-block">Proceed to Checkout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="second-popup-overlay">
+        <div class="second-popup-box second-cart-box">
+            <div class="second-cartmodel-header">
+                <h2>Your Wishlist</h2>
+                <span class="second-close" id="second-popup-close-btn">X</span>
+            </div>
+            <div class="second-cartmodel-body" id="second-cart-items-list">
+                <div id="wishlist-empty">
+                    ❤️ Your Wishlist is Empty
+                </div>
+                <!-- Wishlist items will be here -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--FOOTER-->
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+                <a href="index.html" class="footer-logo"><span>Paper</span>Verse</a>
+                <p>
+                    Find everything you need for school, office, and creative work in one place. Explore our collection
+                    of premium stationery, enjoy great prices, and make every idea come to life with quality you can
+                    trust.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Crafters Corner</a></li>
+                    <li><a href="#events">Artist Corner</a></li>
+                    <li><a href="#call-singers-list">Resin Art</a></li>
+                    <li><a href="#tickets">Journaling</a></li>
+                    <li><a href="#contact">Entrepreneur's Stationery</a></li>
+                    <li><a href="#events">World of Pens!</a></li>
+                    <li><a href="#call-singers-list">Bulk Order</a></li>
+                    <li><a href="#tickets">Track Your Order</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Wholesale & Bulk Buy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Return & Refund policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>2026 PaperVerse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
