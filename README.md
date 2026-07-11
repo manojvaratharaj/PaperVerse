@@ -1,6 +1,6 @@
 # 📚 PaperVerse
 
-PaperVerse is a responsive stationery e-commerce website built using HTML, CSS, and JavaScript.
+PaperVerse is a responsive stationery e-commerce website built using HTML, CSS, and Basic JavaScript.
 
 ## 🌐 Live Demo
 
