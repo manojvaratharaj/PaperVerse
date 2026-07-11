@@ -1759,10 +1759,12 @@ body.dark-mode .quantity-box span {
         transform: none;
     }
 
-
-    .navbar-outer-li:hover .navbar-inner-ul {
-        max-height: 0;
+    navbar-outer-li:hover .navbar-inner-ul {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
     }
+    
 
     .navbar-inner-ul.active {
         max-height: 500px;
